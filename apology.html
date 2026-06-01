@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apology | Baddie Apology</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html"><span class="brand-mark">B</span>Baddie Apology</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="apology.html">Apology</a>
+          <a href="receipts.html">Receipts</a>
+          <a href="questions.html">Anon Ask</a>
+          <a href="explore.html">Explore</a>
+          <a href="slang.html">Slang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">No performative sorry</p>
+          <h1>The apology, respectfully.</h1>
+          <p class="lead">
+            Gen Z slang is fun, but the message still has to be grown. This page says sorry without making her manage your feelings. No cap, no guilt trip.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap vibe-layout">
+          <div class="choice-panel glass">
+            <p class="eyebrow">Choose her mood</p>
+            <h2>What does she need?</h2>
+            <p class="lead">Tap the closest vibe. The response changes without begging her to forgive you on the spot.</p>
+            <div class="choice-buttons">
+              <button class="choice-button active" type="button" data-choice="space"><span>A</span>She needs space</button>
+              <button class="choice-button" type="button" data-choice="talk"><span>B</span>She wants calm talk</button>
+              <button class="choice-button" type="button" data-choice="proof"><span>C</span>She needs proof</button>
+              <button class="choice-button" type="button" data-choice="angry"><span>D</span>She is still mad mad</button>
+            </div>
+          </div>
+
+          <div class="response-panel glass" aria-live="polite">
+            <p class="eyebrow">Right response</p>
+            <h2 id="responseTitle">Bet. Space means space.</h2>
+            <p id="responseText">
+              I will not spam your phone, chase a reply, or act weird because you need time. I care, so I can wait.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap grid-2">
+          <article class="note-panel big">
+            <p id="mainApology">
+              I am sorry for hurting you. You are not doing too much, and your feelings are not the problem.
+              I fumbled and I should have handled things better. I am not here to argue my way out of it.
+              I am here to listen, own what I did, and prove with my actions that I can move different.
+            </p>
+            <div class="signature">- My bad, fr</div>
+            <div class="button-row">
+              <button class="button button-primary" type="button" data-copy-target="#mainApology" data-copy-status="#copyStatus">Copy apology</button>
+              <span class="toast" id="copyStatus"></span>
+            </div>
+          </article>
+
+          <article class="note-panel">
+            <p class="eyebrow">Message to send</p>
+            <h2>Low pressure text</h2>
+            <p id="textMessage">
+              I made something small for you. You do not have to reply right now. I just wanted to say properly that I am sorry,
+              I hear you, and I will respect whatever space you need. I am not trying to love bomb you. I am trying to do better.
+            </p>
+            <div class="button-row">
+              <button class="button button-secondary" type="button" data-copy-target="#textMessage" data-copy-status="#textStatus">Copy text</button>
+              <span class="toast" id="textStatus"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Soft tone. Real accountability. No weird pressure.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
