@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Owner Inbox | Baddie Apology</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html"><span class="brand-mark">B</span>Baddie Apology</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="apology.html">Apology</a>
+          <a href="receipts.html">Receipts</a>
+          <a href="questions.html">Anon Ask</a>
+          <a href="explore.html">Games</a>
+          <a href="slang.html">Slang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Owner view</p>
+          <h1>Private answer inbox.</h1>
+          <p class="lead">
+            This is the separate page for you. Her ask page stays clean; your answers and copy buttons live here.
+          </p>
+          <div class="actions">
+            <a class="button button-secondary" href="questions.html">Back to anon ask</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <div class="note-panel">
+            <p class="eyebrow">Inbox rules</p>
+            <h2>Answer like you mean it.</h2>
+            <p class="hint">
+              Save your answer, copy the Q&A, then send it with calm timing. Do not answer like a debate bro. Answer like someone who wants repair.
+            </p>
+            <div class="button-row">
+              <button class="button button-secondary" type="button" id="exportQuestions">Copy all</button>
+              <button class="button button-ghost" type="button" id="clearQuestions">Clear inbox</button>
+            </div>
+            <div class="toast" id="formToast" aria-live="polite"></div>
+          </div>
+
+          <div class="qa-list inbox-list" id="questionList"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Owner inbox: separate from her ask page, because the last layout was not the move.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>

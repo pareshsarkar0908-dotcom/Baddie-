@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explore | Baddie Apology</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html"><span class="brand-mark">B</span>Baddie Apology</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="apology.html">Apology</a>
+          <a href="receipts.html">Receipts</a>
+          <a href="questions.html">Anon Ask</a>
+          <a class="active" href="explore.html">Games</a>
+          <a href="slang.html">Slang</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Fun mode</p>
+          <h1>Explore the apology games.</h1>
+          <p class="lead">
+            Tap around, unlock notes, spin the wheel, answer couple prompts, and play tiny games. The apology still has accountability,
+            but now the website gives her something fun to explore.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Game menu</p>
+            <h2>Pick a vibe.</h2>
+            <p>These are soft, funny, and low-pressure. She can play one or scroll through everything.</p>
+          </div>
+          <div class="game-menu">
+            <a class="pill" href="#vibe-meter">Vibe Meter</a>
+            <a class="pill" href="#forgiveness-wheel">Forgiveness Wheel</a>
+            <a class="pill" href="#truth-dare">Truth or Dare</a>
+            <a class="pill" href="#memory-match">Memory Match</a>
+            <a class="pill" href="#flag-game">Red or Green Flag</a>
+            <a class="pill" href="#playlist-picker">Playlist Picker</a>
+            <a class="pill" href="#secret-unlock">Secret Unlock</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="vibe-meter">
+        <div class="wrap grid-2">
+          <article class="note-panel">
+            <p class="eyebrow">Game 01</p>
+            <h2>Vibe meter.</h2>
+            <p>She picks the current mood. The site responds without trying to rush her.</p>
+            <div class="choice-buttons compact">
+              <button class="choice-button" type="button" data-vibe="mad"><span>A</span>Still mad</button>
+              <button class="choice-button" type="button" data-vibe="soft"><span>B</span>Softening</button>
+              <button class="choice-button" type="button" data-vibe="snacks"><span>C</span>Need snacks</button>
+              <button class="choice-button" type="button" data-vibe="talk"><span>D</span>Ready to talk</button>
+            </div>
+          </article>
+          <article class="response-panel glass">
+            <p class="eyebrow">Meter result</p>
+            <h2 id="vibeTitle">Awaiting the vibe check.</h2>
+            <p id="vibeText">Tap a mood and the response will show here.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <div class="quest-head glass">
+            <div>
+              <p class="eyebrow">Mini quest</p>
+              <h2>Unlock the final note.</h2>
+              <p class="hint">Tap all three cards. Each one is a tiny promise. When all are complete, the final note unlocks.</p>
+            </div>
+            <div class="quest-progress" aria-label="Quest progress">
+              <strong id="questCount">0/3</strong>
+              <div class="progress-track"><div class="progress-fill" id="questProgress"></div></div>
+            </div>
+          </div>
+
+          <div class="quest-grid">
+            <button class="quest-card" type="button" data-quest="listen">
+              <span>01</span>
+              <strong>Listen first</strong>
+              <em>No interrupting, no defending, no "but I meant..." right away.</em>
+            </button>
+            <button class="quest-card" type="button" data-quest="space">
+              <span>02</span>
+              <strong>Respect space</strong>
+              <em>No notification storm. If she needs quiet, quiet is the move.</em>
+            </button>
+            <button class="quest-card" type="button" data-quest="receipts">
+              <span>03</span>
+              <strong>Bring receipts</strong>
+              <em>Changed behavior over dramatic paragraphs. Period.</em>
+            </button>
+          </div>
+
+          <div class="unlock-panel locked" id="unlockPanel">
+            <p class="eyebrow">Locked note</p>
+            <h2 id="unlockTitle">Tap the promise cards.</h2>
+            <p id="unlockText">
+              The final note unlocks after the full mini quest. Yes, this is extra. But at least it is extra with accountability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="forgiveness-wheel">
+        <div class="wrap grid-2">
+          <article class="note-panel">
+            <p class="eyebrow">Game 03</p>
+            <h2>Spin the forgiveness wheel.</h2>
+            <p>It picks your next repair mission. Some are cute, some are serious, all are better than doing nothing.</p>
+            <div class="wheel-face" id="wheelFace">SPIN</div>
+            <div class="button-row">
+              <button class="button button-primary" type="button" id="spinWheel">Spin wheel</button>
+            </div>
+          </article>
+          <article class="note-panel">
+            <p class="eyebrow">Wheel says</p>
+            <h2 id="wheelTitle">No mission yet.</h2>
+            <p id="wheelText">Spin once and accept your fate respectfully.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="truth-dare">
+        <div class="wrap grid-2">
+          <article class="note-panel">
+            <p class="eyebrow">Game 04</p>
+            <h2>Truth or dare, couple edition.</h2>
+            <p>Soft prompts for a real conversation without making it too heavy.</p>
+            <div class="button-row">
+              <button class="button button-primary" type="button" id="truthButton">Truth</button>
+              <button class="button button-secondary" type="button" id="dareButton">Dare</button>
+            </div>
+          </article>
+          <article class="response-panel glass">
+            <p class="eyebrow">Prompt</p>
+            <h2 id="truthDareTitle">Pick truth or dare.</h2>
+            <p id="truthDareText">A prompt will appear here.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="memory-match">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Game 05</p>
+            <h2>Memory match.</h2>
+            <p>Flip cards and match the memories. It is simple, cute, and slightly addictive.</p>
+          </div>
+          <div class="memory-board" id="memoryBoard">
+            <button class="memory-card" type="button" data-memory="laugh">?</button>
+            <button class="memory-card" type="button" data-memory="date">?</button>
+            <button class="memory-card" type="button" data-memory="laugh">?</button>
+            <button class="memory-card" type="button" data-memory="song">?</button>
+            <button class="memory-card" type="button" data-memory="date">?</button>
+            <button class="memory-card" type="button" data-memory="song">?</button>
+          </div>
+          <div class="unlock-panel" id="memoryStatus">
+            <p class="eyebrow">Match status</p>
+            <h2>0/3 pairs found.</h2>
+            <p>Match all pairs to unlock a tiny compliment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="flag-game">
+        <div class="wrap grid-2">
+          <article class="note-panel">
+            <p class="eyebrow">Game 06</p>
+            <h2>Red flag or green flag?</h2>
+            <p>Read the situation and pick the flag. It is a tiny accountability quiz.</p>
+            <div class="flag-scenario" id="flagScenario">Interrupting while she explains why she is hurt.</div>
+            <div class="button-row">
+              <button class="button button-ghost" type="button" data-flag-pick="red">Red flag</button>
+              <button class="button button-primary" type="button" data-flag-pick="green">Green flag</button>
+            </div>
+          </article>
+          <article class="response-panel glass">
+            <p class="eyebrow">Flag result</p>
+            <h2 id="flagTitle">Make the call.</h2>
+            <p id="flagText">Choose a flag to see if the energy is valid.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="playlist-picker">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Game 07</p>
+            <h2>Mood playlist picker.</h2>
+            <p>She picks the emotional soundtrack. The site gives a matching vibe note.</p>
+          </div>
+          <div class="grid-3">
+            <button class="playlist-card" type="button" data-playlist="angry">
+              <strong>Still angry</strong><span>Main character walk, no texts answered.</span>
+            </button>
+            <button class="playlist-card" type="button" data-playlist="miss">
+              <strong>Miss you but mad</strong><span>Soft songs, sharp side eye.</span>
+            </button>
+            <button class="playlist-card" type="button" data-playlist="soft">
+              <strong>Soft girl mode</strong><span>Healing, tea, and maybe one reply.</span>
+            </button>
+          </div>
+          <div class="unlock-panel" id="playlistResult">
+            <p class="eyebrow">Playlist result</p>
+            <h2>Pick a playlist mood.</h2>
+            <p>The matching message will show here.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="secret-unlock">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Game 08</p>
+            <h2>Secret compliment unlock.</h2>
+            <p>Tap the hidden words. Find all three and a final compliment unlocks.</p>
+          </div>
+          <div class="secret-line note-panel">
+            <p>
+              You are still the <button type="button" class="secret-word" data-secret="favorite">favorite</button>
+              person I want to make laugh, even when the
+              <button type="button" class="secret-word" data-secret="vibe">vibe</button>
+              is giving silent treatment and I am fully
+              <button type="button" class="secret-word" data-secret="cooked">cooked</button>.
+            </p>
+          </div>
+          <div class="unlock-panel locked" id="secretPanel">
+            <p class="eyebrow">Secret note</p>
+            <h2 id="secretTitle">0/3 words found.</h2>
+            <p id="secretText">Tap the hidden words to unlock the final compliment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap grid-2">
+          <article class="note-panel spin-panel">
+            <p class="eyebrow">Random line generator</p>
+            <h2>Spin the apology vibe.</h2>
+            <p id="randomLine">
+              Click the button for a Gen Z apology line that is cute, but still not dodging the point.
+            </p>
+            <div class="button-row">
+              <button class="button button-primary" type="button" id="spinLine">Spin a line</button>
+              <button class="button button-secondary" type="button" data-copy-target="#randomLine" data-copy-status="#spinStatus">Copy line</button>
+            </div>
+            <div class="toast" id="spinStatus"></div>
+          </article>
+
+          <article class="note-panel">
+            <p class="eyebrow">Explore route</p>
+            <h2>Suggested path.</h2>
+            <ol class="step-list">
+              <li><strong>Start with Apology.</strong><span>Read the real message without pressure.</span></li>
+              <li><strong>Check Receipts.</strong><span>See the repair plan, because words alone are mid.</span></li>
+              <li><strong>Drop an Anon Ask.</strong><span>Leave the question that needs an honest answer.</span></li>
+              <li><strong>Open Slang.</strong><span>Use the dictionary when the vibe needs a little flavor.</span></li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Quick jumps</p>
+            <h2>Choose the next move.</h2>
+          </div>
+          <div class="grid-3">
+            <a class="card route-card kiss" href="apology.html">
+              <h3>Read the apology</h3>
+              <p>Soft launch the accountability with a better tone.</p>
+            </a>
+            <a class="card route-card receipt" href="receipts.html">
+              <h3>Check the receipts</h3>
+              <p>See the action plan so it is not giving empty words.</p>
+            </a>
+            <a class="card route-card locked" href="questions.html">
+              <h3>Drop the ask</h3>
+              <p>Leave a question anonymously, then let him answer properly.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Fun to explore, but still accountable. That is the whole point.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
